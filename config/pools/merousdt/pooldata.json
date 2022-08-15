@@ -1,0 +1,42 @@
+{
+  "default": {
+    "pool": {
+      "name": "Mero USDT Pool",
+      "maxWithdrawalFee": "0.05",
+      "minWithdrawalFee": "0"
+    },
+    "lpToken": {
+      "name": "Mero USDT",
+      "symbol": "meroUSDT",
+      "decimals": 6
+    },
+    "vault": {
+      "debtLimit": "0.2",
+      "targetAllocation": "0.9",
+      "bound": "0.05"
+    }
+  },
+  "1": {
+    "underlying": {
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+    }
+  },
+  "42": {
+    "underlying": {
+      "address": "0x13512979ADE267AB5100878E2e0f485B568328a4"
+    }
+  },
+  "1337": {
+    "underlying": {
+      "contract": "DummyERC20",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6
+    },
+    "vault": {
+      "debtLimit": "0.2",
+      "targetAllocation": "0.9",
+      "bound": "0.05"
+    }
+  }
+}

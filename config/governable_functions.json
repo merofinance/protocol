@@ -1,0 +1,1106 @@
+[
+  {
+    "contract": "AddressProvider",
+    "name": "initializeAndFreezeAddress",
+    "signature": "initializeAndFreezeAddress(bytes32,address)",
+    "selector": "115129b5",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "AddressProvider",
+    "name": "addAction",
+    "signature": "addAction(address)",
+    "selector": "23b9da82",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "AddressProvider",
+    "name": "updateAddress",
+    "signature": "updateAddress(bytes32,address)",
+    "selector": "40129a40",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "AddressProvider",
+    "name": "initializeInflationManager",
+    "signature": "initializeInflationManager(address)",
+    "selector": "479688d6",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "AddressProvider",
+    "name": "addFeeHandler",
+    "signature": "addFeeHandler(address)",
+    "selector": "682da3f8",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "AddressProvider",
+    "name": "initializeAddress",
+    "signature": "initializeAddress(bytes32,address,bool)",
+    "selector": "72409ab4",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "AddressProvider",
+    "name": "removeFeeHandler",
+    "signature": "removeFeeHandler(address)",
+    "selector": "d2f31c39",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "AddressProvider",
+    "name": "addPool",
+    "signature": "addPool(address)",
+    "selector": "d914cd4b",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "AddressProvider",
+    "name": "freezeAddress",
+    "signature": "freezeAddress(bytes32)",
+    "selector": "e76e75d4",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "BaseAction",
+    "name": "unpause",
+    "signature": "unpause()",
+    "selector": "3f4ba83a",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "BaseAction",
+    "name": "pause",
+    "signature": "pause()",
+    "selector": "8456cb59",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "BaseAction",
+    "name": "addUsableToken",
+    "signature": "addUsableToken(address)",
+    "selector": "8cb164f9",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "BaseAction",
+    "name": "removeUsableToken",
+    "signature": "removeUsableToken(address)",
+    "selector": "a2624856",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "ChainlinkOracleProvider",
+    "name": "setStalePriceDelay",
+    "signature": "setStalePriceDelay(uint256)",
+    "selector": "3a150b69",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "Controller",
+    "name": "removePool",
+    "signature": "removePool(address)",
+    "selector": "3b7d0946",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "Controller",
+    "name": "updateKeeperRequiredStakedMERO",
+    "signature": "updateKeeperRequiredStakedMERO(uint256)",
+    "selector": "43e20c95",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "Controller",
+    "name": "shutdownAction",
+    "signature": "shutdownAction(address)",
+    "selector": "4cbb4ba2",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "Controller",
+    "name": "addStakerVault",
+    "signature": "addStakerVault(address)",
+    "selector": "c1d84e0b",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "Controller",
+    "name": "shutdownPool",
+    "signature": "shutdownPool(address,bool)",
+    "selector": "df2036d2",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "ConvexStrategyBase",
+    "name": "addRewardToken",
+    "signature": "addRewardToken(address)",
+    "selector": "1c03e6cc",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "ConvexStrategyBase",
+    "name": "removeRewardToken",
+    "signature": "removeRewardToken(address)",
+    "selector": "3d509c97",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "ConvexStrategyBase",
+    "name": "setImbalanceToleranceIn",
+    "signature": "setImbalanceToleranceIn(uint256)",
+    "selector": "49cabcdf",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "ConvexStrategyBase",
+    "name": "setCrvCommunityReserveShare",
+    "signature": "setCrvCommunityReserveShare(uint256)",
+    "selector": "70aa1726",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "ConvexStrategyBase",
+    "name": "setCommunityReserve",
+    "signature": "setCommunityReserve(address)",
+    "selector": "c2bddf31",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "ConvexStrategyBase",
+    "name": "setImbalanceToleranceOut",
+    "signature": "setImbalanceToleranceOut(uint256)",
+    "selector": "e9eb5088",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "ConvexStrategyBase",
+    "name": "setCvxCommunityReserveShare",
+    "signature": "setCvxCommunityReserveShare(uint256)",
+    "selector": "ecf8db0a",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "unstakeCvxCrv",
+    "signature": "unstakeCvxCrv()",
+    "selector": "21e39e97",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "forfeitRewards",
+    "signature": "forfeitRewards(address,uint256)",
+    "selector": "221edb3b",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "unstakeCvxCrv",
+    "signature": "unstakeCvxCrv(uint256,bool)",
+    "selector": "2b6d0a85",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "withdraw",
+    "signature": "withdraw(address)",
+    "selector": "51cff8d9",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "resetWithdrawalFlag",
+    "signature": "resetWithdrawalFlag()",
+    "selector": "59b93026",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "setDelegate",
+    "signature": "setDelegate(address,address)",
+    "selector": "5c873849",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "unstakeCvxCrv",
+    "signature": "unstakeCvxCrv(bool)",
+    "selector": "7d12c1d0",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "setSpendRatio",
+    "signature": "setSpendRatio(uint256)",
+    "selector": "99ae2a1d",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "withdrawCvxCrv",
+    "signature": "withdrawCvxCrv(uint256)",
+    "selector": "c39cfd3b",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "clearDelegate",
+    "signature": "clearDelegate(address)",
+    "selector": "cc21cc2a",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "setWithdrawalFlag",
+    "signature": "setWithdrawalFlag()",
+    "selector": "e0a91a03",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "setTreasury",
+    "signature": "setTreasury(address)",
+    "selector": "f0f44260",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "CvxCrvRewardsLocker",
+    "name": "withdraw",
+    "signature": "withdraw(address,uint256)",
+    "selector": "f3fef3a3",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "deactivateWeightBasedKeeperDistribution",
+    "signature": "deactivateWeightBasedKeeperDistribution()",
+    "selector": "0edb01e4",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "updateKeeperPoolWeight",
+    "signature": "updateKeeperPoolWeight(address,uint256)",
+    "selector": "5a5156d1",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "batchUpdateKeeperPoolWeights",
+    "signature": "batchUpdateKeeperPoolWeights(address[],uint256[])",
+    "selector": "674bb60a",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "batchUpdateAmmTokenWeights",
+    "signature": "batchUpdateAmmTokenWeights(address[],uint256[])",
+    "selector": "7b31c5de",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "setAmmGauge",
+    "signature": "setAmmGauge(address,address)",
+    "selector": "8461372f",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "advanceKeeperGaugeEpoch",
+    "signature": "advanceKeeperGaugeEpoch(address)",
+    "selector": "8d6dca55",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "setKeeperGauge",
+    "signature": "setKeeperGauge(address,address)",
+    "selector": "9bbdd1ac",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "batchUpdateLpPoolWeights",
+    "signature": "batchUpdateLpPoolWeights(address[],uint256[])",
+    "selector": "c6ff6443",
+    "delay": 1,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "removeKeeperGauge",
+    "signature": "removeKeeperGauge(address)",
+    "selector": "df9f8fb7",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "updateLpPoolWeight",
+    "signature": "updateLpPoolWeight(address,uint256)",
+    "selector": "f1f32639",
+    "delay": 1,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "setMinter",
+    "signature": "setMinter(address)",
+    "selector": "fca3b5aa",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "removeAmmGauge",
+    "signature": "removeAmmGauge(address)",
+    "selector": "fd600b84",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "InflationManager",
+    "name": "updateAmmTokenWeight",
+    "signature": "updateAmmTokenWeight(address,uint256)",
+    "selector": "fe77842f",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "updateReserveDeviation",
+    "signature": "updateReserveDeviation(uint256)",
+    "selector": "2d8796bd",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "setStaker",
+    "signature": "setStaker()",
+    "selector": "66f07dd2",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "updateRequiredReserves",
+    "signature": "updateRequiredReserves(uint256)",
+    "selector": "71207531",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "withdrawAll",
+    "signature": "withdrawAll()",
+    "selector": "853828b6",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "rebalanceVault",
+    "signature": "rebalanceVault()",
+    "selector": "8f7265b0",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "updateMaxWithdrawalFee",
+    "signature": "updateMaxWithdrawalFee(uint256)",
+    "selector": "9510c364",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "updateMinWithdrawalFee",
+    "signature": "updateMinWithdrawalFee(uint256)",
+    "selector": "9c7a207b",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "setLpToken",
+    "signature": "setLpToken(address)",
+    "selector": "9ee933b5",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "shutdownStrategy",
+    "signature": "shutdownStrategy()",
+    "selector": "be8f1668",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "updateWithdrawalFeeDecreasePeriod",
+    "signature": "updateWithdrawalFeeDecreasePeriod(uint256)",
+    "selector": "c4a01cd0",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "LiquidityPool",
+    "name": "updateVault",
+    "signature": "updateVault(address)",
+    "selector": "e7563f3f",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroLocker",
+    "name": "updateWithdrawalDelay",
+    "signature": "updateWithdrawalDelay(uint256)",
+    "selector": "52cd67e9",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroLocker",
+    "name": "initialize",
+    "signature": "initialize(uint256,uint256,uint256,uint256)",
+    "selector": "60a2da44",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroLocker",
+    "name": "updateIncreasePeriod",
+    "signature": "updateIncreasePeriod(uint256)",
+    "selector": "bde183e6",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroLocker",
+    "name": "migrate",
+    "signature": "migrate(address)",
+    "selector": "ce5494bb",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroLocker",
+    "name": "updateStartBoost",
+    "signature": "updateStartBoost(uint256)",
+    "selector": "e99d5cdf",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroProxyAdmin",
+    "name": "initializeRoleManager",
+    "signature": "initializeRoleManager(address)",
+    "selector": "009d61cd",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroProxyAdmin",
+    "name": "upgradeAndCall",
+    "signature": "upgradeAndCall(address,address,bytes)",
+    "selector": "9623609d",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroProxyAdmin",
+    "name": "upgrade",
+    "signature": "upgrade(address,address)",
+    "selector": "99a88ec4",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroTriHopCvx",
+    "name": "setHopImbalanceToleranceIn",
+    "signature": "setHopImbalanceToleranceIn(uint256)",
+    "selector": "938511a7",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroTriHopCvx",
+    "name": "setHopImbalanceToleranceOut",
+    "signature": "setHopImbalanceToleranceOut(uint256)",
+    "selector": "aa6a8caf",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MeroTriHopCvx",
+    "name": "changeConvexPool",
+    "signature": "changeConvexPool(uint256,address,uint256)",
+    "selector": "df22a747",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "Minter",
+    "name": "setToken",
+    "signature": "setToken(address)",
+    "selector": "144fa6d7",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "Minter",
+    "name": "mintNonInflationTokens",
+    "signature": "mintNonInflationTokens(address,uint256)",
+    "selector": "c522a6e4",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "Minter",
+    "name": "startInflation",
+    "signature": "startInflation()",
+    "selector": "f9b7ce02",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockErc20Pool",
+    "name": "setMaxWithdrawalFee",
+    "signature": "setMaxWithdrawalFee(uint256)",
+    "selector": "1992a088",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockErc20Pool",
+    "name": "setVault",
+    "signature": "setVault(address,bool)",
+    "selector": "627f66c6",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockErc20Pool",
+    "name": "setMinWithdrawalFee",
+    "signature": "setMinWithdrawalFee(uint256)",
+    "selector": "6738ccc8",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockErc20Pool",
+    "name": "setMaxBackingReserveDeviationRatio",
+    "signature": "setMaxBackingReserveDeviationRatio(uint256)",
+    "selector": "b9e06873",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockErc20Pool",
+    "name": "setWithdrawalFeeDecreasePeriod",
+    "signature": "setWithdrawalFeeDecreasePeriod(uint256)",
+    "selector": "bf57daba",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockErc20Pool",
+    "name": "setRequiredBackingReserveRatio",
+    "signature": "setRequiredBackingReserveRatio(uint256)",
+    "selector": "de55b5d9",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockErc20Strategy",
+    "name": "setVault",
+    "signature": "setVault(address)",
+    "selector": "6817031b",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockEthPool",
+    "name": "setMaxWithdrawalFee",
+    "signature": "setMaxWithdrawalFee(uint256)",
+    "selector": "1992a088",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockEthPool",
+    "name": "setVault",
+    "signature": "setVault(address,bool)",
+    "selector": "627f66c6",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockEthPool",
+    "name": "setMinWithdrawalFee",
+    "signature": "setMinWithdrawalFee(uint256)",
+    "selector": "6738ccc8",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockEthPool",
+    "name": "setMaxBackingReserveDeviationRatio",
+    "signature": "setMaxBackingReserveDeviationRatio(uint256)",
+    "selector": "b9e06873",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockEthPool",
+    "name": "setWithdrawalFeeDecreasePeriod",
+    "signature": "setWithdrawalFeeDecreasePeriod(uint256)",
+    "selector": "bf57daba",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockEthPool",
+    "name": "setRequiredBackingReserveRatio",
+    "signature": "setRequiredBackingReserveRatio(uint256)",
+    "selector": "de55b5d9",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockEthStrategy",
+    "name": "setVault",
+    "signature": "setVault(address)",
+    "selector": "6817031b",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockTopUpAction",
+    "name": "setActionFee",
+    "signature": "setActionFee(uint256)",
+    "selector": "d87abeca",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockVaultMethods",
+    "name": "setTargetAllocation",
+    "signature": "setTargetAllocation(uint256)",
+    "selector": "27709cf7",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockVaultMethods",
+    "name": "setTargetAllocation",
+    "signature": "setTargetAllocation(uint256)",
+    "selector": "27709cf7",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockVaultMethods",
+    "name": "setTargetAllocation",
+    "signature": "setTargetAllocation(uint256)",
+    "selector": "27709cf7",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockVaultMethods",
+    "name": "setStrategy",
+    "signature": "setStrategy(address)",
+    "selector": "33a100ca",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockVaultMethods",
+    "name": "setStrategy",
+    "signature": "setStrategy(address)",
+    "selector": "33a100ca",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockVaultMethods",
+    "name": "setStrategy",
+    "signature": "setStrategy(address)",
+    "selector": "33a100ca",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockVaultMethods",
+    "name": "setBound",
+    "signature": "setBound(uint256)",
+    "selector": "4b149e79",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockVaultMethods",
+    "name": "setBound",
+    "signature": "setBound(uint256)",
+    "selector": "4b149e79",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "MockVaultMethods",
+    "name": "setBound",
+    "signature": "setBound(uint256)",
+    "selector": "4b149e79",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "PoolFactory",
+    "name": "addLpTokenImplementation",
+    "signature": "addLpTokenImplementation(bytes32,address,bytes)",
+    "selector": "02574035",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "PoolFactory",
+    "name": "deployPool",
+    "signature": "deployPool(address,(string,uint256,uint256),(string,string,uint8),(uint256,uint256,uint256),(bytes32,bytes32,bytes32,bytes32))",
+    "selector": "17a7de60",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "PoolFactory",
+    "name": "addPoolImplementation",
+    "signature": "addPoolImplementation(bytes32,address)",
+    "selector": "327bea89",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "PoolFactory",
+    "name": "addVaultImplementation",
+    "signature": "addVaultImplementation(bytes32,address)",
+    "selector": "34e6cbad",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "PoolFactory",
+    "name": "addLpTokenImplementation",
+    "signature": "addLpTokenImplementation(bytes32,address)",
+    "selector": "93ade8e7",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "PoolFactory",
+    "name": "addStakerVaultImplementation",
+    "signature": "addStakerVaultImplementation(bytes32,address)",
+    "selector": "bbbaf172",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "RoleManager",
+    "name": "grantRole",
+    "signature": "grantRole(bytes32,address)",
+    "selector": "2f2ff15d",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "RoleManager",
+    "name": "addGovernor",
+    "signature": "addGovernor(address)",
+    "selector": "3c4a25d0",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "RoleManager",
+    "name": "removeGaugeZap",
+    "signature": "removeGaugeZap(address)",
+    "selector": "616bf2d1",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "RoleManager",
+    "name": "renounceGovernance",
+    "signature": "renounceGovernance()",
+    "selector": "758904b8",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "RoleManager",
+    "name": "addGaugeZap",
+    "signature": "addGaugeZap(address)",
+    "selector": "b1c11a6d",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "RoleManager",
+    "name": "revokeRole",
+    "signature": "revokeRole(bytes32,address)",
+    "selector": "d547741f",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "StakerVault",
+    "name": "updateLpGauge",
+    "signature": "updateLpGauge(address)",
+    "selector": "756b2693",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "StakerVault",
+    "name": "initializeLpGauge",
+    "signature": "initializeLpGauge(address)",
+    "selector": "7aa49725",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "SwapperRouter",
+    "name": "setSlippageTolerance",
+    "signature": "setSlippageTolerance(uint256)",
+    "selector": "117da1ee",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "SwapperRouter",
+    "name": "setCurvePool",
+    "signature": "setCurvePool(address,address)",
+    "selector": "58fd9be0",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "TopUpAction",
+    "name": "updateEstimatedGasUsage",
+    "signature": "updateEstimatedGasUsage(uint256)",
+    "selector": "1eb8c7a3",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "TopUpAction",
+    "name": "updateFeeHandler",
+    "signature": "updateFeeHandler(address)",
+    "selector": "29988b04",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "TopUpAction",
+    "name": "updateTopUpHandler",
+    "signature": "updateTopUpHandler(bytes32,address)",
+    "selector": "506e3ebf",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "TopUpAction",
+    "name": "updateActionFee",
+    "signature": "updateActionFee(uint256)",
+    "selector": "5ec185de",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "TopUpAction",
+    "name": "initialize",
+    "signature": "initialize(address,bytes32[],address[])",
+    "selector": "d41b4e72",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "TopUpActionFeeHandler",
+    "name": "setInitialKeeperGaugeForToken",
+    "signature": "setInitialKeeperGaugeForToken(address,address)",
+    "selector": "0f2703a2",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "TopUpActionFeeHandler",
+    "name": "updateKeeperGauge",
+    "signature": "updateKeeperGauge(address,address)",
+    "selector": "8e783523",
+    "delay": 5,
+    "reviewed": true
+  },
+  {
+    "contract": "TopUpActionFeeHandler",
+    "name": "updateTreasuryFee",
+    "signature": "updateTreasuryFee(uint256)",
+    "selector": "97232830",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "TopUpActionFeeHandler",
+    "name": "updateKeeperFee",
+    "signature": "updateKeeperFee(uint256)",
+    "selector": "97faf60b",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "updateStrategistFee",
+    "signature": "updateStrategistFee(uint256)",
+    "selector": "0463b7de",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "withdrawFromReserve",
+    "signature": "withdrawFromReserve(uint256)",
+    "selector": "0a8bcdb9",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "deactivateStrategy",
+    "signature": "deactivateStrategy()",
+    "selector": "21401dd1",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "withdrawFromStrategy",
+    "signature": "withdrawFromStrategy(uint256)",
+    "selector": "48b19335",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "updateReserveFee",
+    "signature": "updateReserveFee(uint256)",
+    "selector": "52ec6102",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "activateStrategy",
+    "signature": "activateStrategy()",
+    "selector": "6741c1b9",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "initializeStrategy",
+    "signature": "initializeStrategy(address)",
+    "selector": "678cbcb5",
+    "delay": 0,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "updateBound",
+    "signature": "updateBound(uint256)",
+    "selector": "7adbccc8",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "updateDebtLimit",
+    "signature": "updateDebtLimit(uint256)",
+    "selector": "babc24fe",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "updateStrategy",
+    "signature": "updateStrategy(address)",
+    "selector": "daccaf63",
+    "delay": 7,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "updatePerformanceFee",
+    "signature": "updatePerformanceFee(uint256)",
+    "selector": "e8981330",
+    "delay": 3,
+    "reviewed": true
+  },
+  {
+    "contract": "Vault",
+    "name": "updateTargetAllocation",
+    "signature": "updateTargetAllocation(uint256)",
+    "selector": "f4e0cd87",
+    "delay": 3,
+    "reviewed": true
+  }
+]

@@ -1,0 +1,13 @@
+artifacts/
+cache/
+typechain/
+js/
+build/
+env/
+*__pycache__/
+packages/
+
+.vscode
+reports/
+node_modules/
+.env

@@ -1,0 +1,109 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: yarn
+      - name: Lint Contracts
+        run: yarn run lint
+
+  deploy_dev:
+    name: Deploy Dev
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup
+        with:
+          token: "${{ secrets.PERSONAL_GITHUB_TOKEN }}"
+      - name: Launch Ganache
+        run: npx ganache-cli --port 9545 &
+      - name: Wait for Ganache to complete setup
+        run: sleep 5
+      - name: Create Brownie devnet
+        run: brownie networks add Ethereum devnet host=http://localhost:9545 chainid=1337
+      - name: Run deployment scripts
+        run: misc/deploy-devnet.sh
+
+  deploy_mainnet_fork:
+    name: Deploy Mainnet Fork
+    runs-on: ubuntu-latest
+    env:
+      WEB3_INFURA_PROJECT_ID: ${{ secrets.WEB3_INFURA_PROJECT_ID }}
+      BROWNIE_PRIORITY_GWEI: "5"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup
+        with:
+          token: "${{ secrets.PERSONAL_GITHUB_TOKEN }}"
+      - name: Launch Ganache
+        run: ./misc/start-mainnet-fork.sh &
+      - name: Wait for Ganache to complete setup
+        run: sleep 5
+      - name: Create Brownie devnet
+        run: brownie networks add Ethereum live-mainnet-fork host=http://localhost:9555 chainid=1111
+      - name: Run deployment scripts
+        run: misc/deploy-mainnet-fork.sh
+
+  eth_unit_test:
+    name: ETH Unit Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup
+        with:
+          token: "${{ secrets.PERSONAL_GITHUB_TOKEN }}"
+      - name: Run Unit Tests
+        run: brownie test --skip-stateful -m "not mainnetFork" --type eth
+
+  erc20_unit_test:
+    name: ERC20 Unit Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup
+        with:
+          token: "${{ secrets.PERSONAL_GITHUB_TOKEN }}"
+      - name: Run Unit Tests
+        run: brownie test --skip-stateful -m "not mainnetFork" --type erc20
+
+  integration_test:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
+      WEB3_INFURA_PROJECT_ID: ${{ secrets.WEB3_INFURA_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup
+        with:
+          token: "${{ secrets.PERSONAL_GITHUB_TOKEN }}"
+      - name: Run Integration Tests
+        run: brownie test --network mainnet-fork -m mainnetFork
+
+  function_review_check:
+    name: Check Functions Reviewed
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup
+        with:
+          token: "${{ secrets.PERSONAL_GITHUB_TOKEN }}"
+      - name: Generate 4byte json
+        run: python ./misc/generate_4byte_json.py
+      - name: Generate Governable Functions
+        run: python ./misc/generate_governable_functions.py
+      - name: Validate Functions
+        run: python ./misc/validate_functions.py

@@ -1,0 +1,17 @@
+{
+  "lpInflation": {
+    "meroDAI": 0.4,
+    "meroETH": 0.3,
+    "meroUSDC": 0.2,
+    "meroUSDT": 0.1
+  },
+  "keeperInflation": {
+    "meroDAI": 0.4,
+    "meroETH": 0.3,
+    "meroUSDC": 0.2,
+    "meroUSDT": 0.1
+  },
+  "ammInflation": {
+    "TAT": 1.0
+  }
+}

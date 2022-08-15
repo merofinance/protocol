@@ -1,0 +1,19 @@
+{
+  "default": {
+    "pool": {
+      "name": "Mero ETH Pool",
+      "maxWithdrawalFee": "0.03",
+      "minWithdrawalFee": "0"
+    },
+    "lpToken": {
+      "name": "Mero ETH",
+      "symbol": "meroETH",
+      "decimals": 18
+    },
+    "vault": {
+      "debtLimit": "0.2",
+      "targetAllocation": "0.9",
+      "bound": "0.05"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+name: "Setup environment"
+
+inputs:
+  token:
+    description: "A Github PAT"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v2
+    - name: Use Python 3.9.7
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9.7
+    - name: Install Node dependencies
+      run: yarn
+      shell: bash
+    - name: Install Python dependencies
+      run: pip3 install install -r requirements.txt
+      shell: bash
+    - name: Install ganache-cli
+      run: yarn global add ganache
+      shell: bash
+    - name: Compile contracts
+      run: brownie compile
+      shell: bash
+      env:
+        GITHUB_TOKEN: "${{ inputs.token }}"
